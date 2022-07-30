@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- 这是一个注释 -->
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <meta name="description" content="免费 Web & 编程 教程">
+    <meta name="author" content="Runoob">
+    <meta http-equiv="refresh" content="30">
+    <title>网页title</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_logosc/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_logosc/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_logosc/favicon-16x16.png">
+    <link rel="icon" href="favicon_logosc/favicon.ico">
+    <style>
+      p{
+        color: blue;
+      }
+      #one{
+        color:orange;
+      }
+      .hxek{
+        color:red;
+      }
+    </style>
+  </head>
+
+  <body >
+    <div style="background-color: #f1f1f1; text-align: center; padding: 40px">
+      <img
+        alt="图像"
+        src="https://kangwenchang.com/logo.png"
+        width="80px" 
+        height="80px"
+      />
+      <a id="tips">有用的提示部分</a>
+    </div>
+
+    <div
+      style="
+        max-width: 760px;
+        margin: 40px auto;
+        padding: 15px;
+        line-height: 1.7;
+      "
+    >
+      <h1> 一号标题 </h1>
+      <h2> 二号标题 </h2>
+      <p id = "one">段落1</p>
+      <b>这个文本是加粗的</b>
+      <sub>下标</sub>
+      <sup>上标</sup>
+      <p style="font-family:arial;color:red;font-size:20px;">段落2</p>
+      <hr>
+      <p> 段落31<br>段落32 </p>
+      <p class = "hxek">段落4</p>
+    </div>
+
+    <div
+      style="
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 40px;
+        font-size: 12px;
+      "
+    >
+      <a href="#tips">访问有用的提示部分</a>
+      <p>说明</p>
+      <!--请始终将正斜杠添加到子文件夹。假如这样书写链接：
+        href="https://www.runoob.com/html"，
+        就会向服务器产生两次 HTTP 请求。
+        这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，
+        就像这样：href="https://www.runoob.com/html/"。-->
+      <a href="https://kangwenchang.com/" > 链接 </a>
+      <p>如果你将 target 属性设置为 &quot;_blank&quot;, 链接将在新窗口打开。</p>
+    </div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
+  </body>
+  
+</html>
